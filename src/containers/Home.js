@@ -60,8 +60,8 @@ function Home() {
             <div className="intro-content">
               Don't just dream it, <b>achieve</b> it with Domus Design
             </div>
-            <NavLink to="contact" className="contact-redirect">
-              <Button bsClass="contact-button">
+            <NavLink to="/contact" className="contact-redirect">
+              <Button className="contact-button">
                 Contact Us
                 <FontAwesomeIcon
                   icon={faArrowCircleRight}

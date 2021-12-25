@@ -43,14 +43,6 @@ function About() {
         </div>
       </div>
       <div className="about-content">
-        <div className="about-text">
-          <b>
-            <span style={{ fontSize: "30px", color: "#f60703" }}>
-              Domus Design Inc
-            </span>{" "}
-            is a General Contractor company based in New York.
-          </b>
-        </div>
         <div style={{ display: "flex", height: "85%" }}>
           <div
             className="about-text flex-large"
@@ -60,6 +52,12 @@ function About() {
               paddingRight: "50px",
             }}
           >
+            <b>
+              <span style={{ fontSize: "25px", color: "#f60703" }}>
+                Domus Design Inc
+              </span>{" "}
+              is a General Contractor company based in New York.
+            </b>
             <span>
               We are a <b>small business</b> with a <b>big business outlook</b>.
               Not only do we excel in delivering excellent quality work and
@@ -76,15 +74,15 @@ function About() {
               just the New York area either, so contact us today with your
               project and let's create something amazing together.
             </span>
-            <span style={{ fontSize: "30px", margin: "10px" }}>
+            <span style={{ fontSize: "20px", margin: "5px" }}>
               <b>
                 There is no DOM<span style={{ color: "#f60703" }}>US</span>{" "}
                 DESIGN without <span style={{ color: "#f60703" }}>"US"</span>
               </b>
             </span>
 
-            <NavLink to="contact" className="contact-redirect">
-              <Button bsClass="contact-button">
+            <NavLink replace to="/contact" className="contact-redirect">
+              <Button className="contact-button">
                 Contact Us Today
                 <FontAwesomeIcon
                   icon={faArrowCircleRight}
@@ -105,7 +103,7 @@ function About() {
               <CardText>
                 New building construction to condo renovations
               </CardText>
-              <NavLink to="residential">
+              <NavLink to="/residential">
                 <Button outline color="danger">
                   View Residential
                   <FontAwesomeIcon
@@ -125,10 +123,8 @@ function About() {
               <CardTitle>
                 <b>Commercial</b>
               </CardTitle>
-              <CardText>
-                Standalone business storefronts to multiple franchises
-              </CardText>
-              <NavLink to="commercial">
+              <CardText>Standalone businesses & multiple franchises</CardText>
+              <NavLink to="/commercial">
                 <Button outline color="danger">
                   View Commercial
                   <FontAwesomeIcon

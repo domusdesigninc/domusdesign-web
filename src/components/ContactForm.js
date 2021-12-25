@@ -1,15 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "../assets/styles/ContactForm.css";
-import {
-  FormGroup,
-  Label,
-  Col,
-  Input,
-  Spinner,
-  Button,
-  FormFeedback,
-} from "reactstrap";
+import { FormGroup, Label, Col, Input, Spinner, Button } from "reactstrap";
 
 const SERVICE_ID = "domusdesign_main";
 const TEMPLATE_ID = "template_51bbb6l";

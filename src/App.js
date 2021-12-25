@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { COMMERCIAL_WORKS, RESIDENTIAL_WORKS } from "./shared/constants";
 import Home from "./containers/Home";
 import Footer from "./components/Footer";
